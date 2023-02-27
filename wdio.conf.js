@@ -11,16 +11,18 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
-    exclude: [
-    ],
     maxInstances: 10,
+
+    // replace this Selenium WebDriver configuration with the code snippet from onboarding wizard
+    //-----------------------Selenium WebDriver configuration-----------------------
+
     protocol: 'https',
     hostname: 'engine.zebrunner.com',
     port: 443,
     path: '/wd/hub',
     user: 'user',
     key: 'key',
- 
+
     capabilities: [{
         maxInstances: 1,
         platformName: 'linux',
@@ -28,7 +30,9 @@ exports.config = {
         browserVersion: '109.0',
         'zebrunner:enableVideo': true
     }]
- ,
+
+    //----------------------- Selenium WebDriver configuration -----------------------
+    ,
     // ===================
     // Test Configurations
     // ===================
@@ -40,13 +44,14 @@ exports.config = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 1,
     services: [[ZebrunnerService],
-      //   'chromedriver'
+        //   'chromedriver'
     ],
     framework: 'mocha',
     reporters: [
         [
-        // replace this ZebrunnerReporter with the code snippet from onboarding wizard
-          //-----------------------ZebrunnerReporter-----------------------
+            // replace this ZebrunnerReporter with the code snippet from onboarding wizard
+            //----------------------- Zebrunner Reporter configuration -----------------------
+
             ZebrunnerReporter,
             {
                 enabled: true,
@@ -69,9 +74,10 @@ exports.config = {
                     excludeLoggers: 'webdriver'
                 }
             }
-            //-----------------------ZebrunnerReporter-----------------------
+
+            //----------------------- Zebrunner Reporter configuration -----------------------
         ],
-             'spec'],
+        'spec'],
 
     mochaOpts: {
         ui: 'bdd',
