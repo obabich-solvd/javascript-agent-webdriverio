@@ -12,7 +12,7 @@
     },
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
-        "test-basic": "wdio wdio.conf.js --spec ./test/specs/basic.js",
+        "test": "wdio wdio.conf.js --spec ./test/specs/basic.js",
         "test-advanced": "wdio wdio.conf.js --spec ./test/specs/advanced.js"
     },
     "dependencies": {

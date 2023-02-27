@@ -12,10 +12,8 @@ exports.config = {
         './test/specs/**/*.js'
     ],
     maxInstances: 10,
-
     // replace this Selenium WebDriver configuration with the code snippet from onboarding wizard
-    //-----------------------Selenium WebDriver configuration-----------------------
-
+    //----------------------- Selenium WebDriver configuration-----------------------
     protocol: 'https',
     hostname: 'engine.zebrunner.com',
     port: 443,
@@ -30,13 +28,11 @@ exports.config = {
         browserVersion: '109.0',
         'zebrunner:enableVideo': true
     }]
-
     //----------------------- Selenium WebDriver configuration -----------------------
     ,
     // ===================
     // Test Configurations
     // ===================
-
     logLevel: 'info',
     bail: 0,
     baseUrl: 'http://localhost',
@@ -51,7 +47,6 @@ exports.config = {
         [
             // replace this ZebrunnerReporter with the code snippet from onboarding wizard
             //----------------------- Zebrunner Reporter configuration -----------------------
-
             ZebrunnerReporter,
             {
                 enabled: true,
@@ -64,21 +59,16 @@ exports.config = {
                     displayName: 'Nightly Regression',
                     build: '2.41.2.2431-SNAPSHOT',
                     environment: 'QA',
-                    locale: 'en_US',
-                    treatSkipsAsFailures: true,
-
                 },
                 logs: {
                     pushDelayMillis: 10000,
                     includeLoggerName: true,
-                    excludeLoggers: 'webdriver'
+                    excludeLoggers: 'webdriver',
                 }
             }
-
             //----------------------- Zebrunner Reporter configuration -----------------------
         ],
         'spec'],
-
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000

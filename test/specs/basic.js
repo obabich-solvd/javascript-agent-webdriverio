@@ -3,7 +3,6 @@ const { currentTest } = require("@zebrunner/javascript-agent-webdriverio");
 const { Key } = require("webdriverio");
 
 describe('Basic reporting test', () => {
-
     const logger = log.getLogger("LOGGER");
     const url = 'https://www.google.com/';
     const searchValue = 'Zebrunner';
@@ -11,7 +10,6 @@ describe('Basic reporting test', () => {
     before(function () {
         logger.warn('This log message will not be submitted into Zebrunner');
         browser.maximizeWindow();
-
     });
 
     beforeEach(function () {
@@ -19,7 +17,6 @@ describe('Basic reporting test', () => {
     });
 
     it('Google search', async () => {
-
         logger.info(`Opening ${url}`);
         await browser.url(url);
         currentTest.saveScreenshot(await browser.takeScreenshot());
