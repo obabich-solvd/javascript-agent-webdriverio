@@ -54,7 +54,7 @@ describe('Advanced reporting test', () => {
     });
 
     afterEach(function () {
-        logger.info(` Test  ${this.currentTest.title} finished `);
+        logger.info(`Test  ${this.currentTest.title} finished`);
     });
 })
 
