@@ -8,6 +8,7 @@ describe('Advanced reporting test', () => {
         // will be attached to the entire run
         currentLaunch.attachArtifactReference('Zebrunner', 'https://zebrunner.com/');
         currentLaunch.attachLabel("framework", "WDIO");
+        browser.maximizeWindow();
     });
 
     beforeEach(function () {
@@ -15,12 +16,14 @@ describe('Advanced reporting test', () => {
     });
 
     it('Tracking test maintainer', async () => {
+        await browser.url('https://zebrunner.com/documentation/reporting/webdriverio/#tracking-test-maintainer');
         currentTest.setMaintainer('Deve Loper');
         logger.info("Example shows how to attach a maintainer for a specific test");
         logger.info("NOTE: The maintainer username should be a valid Zebrunner username, otherwise it will be set to anonymous");
     });
 
     it('Attaching labels to test and launch', async () => {
+        await browser.url('https://zebrunner.com/documentation/reporting/webdriverio/#attaching-labels-to-test-and-launch');
         // will be attached to this test only
         currentTest.attachLabel('feature', 'login');
         logger.info("Example shows how to add labels using annotation for a specific test");
@@ -31,6 +34,7 @@ describe('Advanced reporting test', () => {
     });
 
     it('Attaching artifact references to test and launch', async () => {
+        await browser.url('https://zebrunner.com/documentation/reporting/webdriverio/#attaching-artifact-references-to-test-and-launch');
         // will be attached to this test only
         currentTest.attachArtifactReference("Zebrunner documentation", "https://zebrunner.com/documentation/");
         logger.info("Example shows how to attach reference for a specific test");
@@ -45,6 +49,7 @@ describe('Advanced reporting test', () => {
             currentTest.revertRegistration();
             logger.info("Example shows how to revert test registration at runtime.");
         }
+        await browser.url('https://zebrunner.com/documentation/reporting/webdriverio/#reverting-test-registration');
         logger.info("This test will not reported on Monday.");
     });
 
