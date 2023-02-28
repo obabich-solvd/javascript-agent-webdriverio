@@ -2,9 +2,6 @@ const { ZebrunnerReporter, ZebrunnerService } = require('@zebrunner/javascript-a
 
 
 exports.config = {
-    // ====================
-    // Runner Configuration
-    // ====================
     reporterSyncInterval: 60 * 1000,
     runner: 'local',
 
@@ -12,7 +9,7 @@ exports.config = {
         './test/specs/**/*.js'
     ],
     maxInstances: 10,
-    // replace this Selenium WebDriver configuration with the code snippet from onboarding wizard
+    // replace the following block with your Selenium WebDriver configuration
     //----------------------- Selenium WebDriver configuration-----------------------
     protocol: 'https',
     hostname: 'engine.zebrunner.com',
@@ -26,13 +23,10 @@ exports.config = {
         platformName: 'linux',
         browserName: 'chrome',
         browserVersion: '109.0',
-        'zebrunner:enableVideo': true
+        'zebrunner:options.enableVideo': true,
     }]
     //----------------------- Selenium WebDriver configuration -----------------------
     ,
-    // ===================
-    // Test Configurations
-    // ===================
     logLevel: 'info',
     bail: 0,
     baseUrl: 'http://localhost',
@@ -40,12 +34,11 @@ exports.config = {
     connectionRetryTimeout: 120000,
     connectionRetryCount: 1,
     services: [[ZebrunnerService],
-        //   'chromedriver'
     ],
     framework: 'mocha',
     reporters: [
         [
-            // replace this ZebrunnerReporter with the code snippet from onboarding wizard
+            // replace the following block with your ZebrunnerReporter configuration
             //----------------------- Zebrunner Reporter configuration -----------------------
             ZebrunnerReporter,
             {
@@ -59,11 +52,6 @@ exports.config = {
                     displayName: 'Nightly Regression',
                     build: '2.41.2.2431-SNAPSHOT',
                     environment: 'QA',
-                },
-                logs: {
-                    pushDelayMillis: 10000,
-                    includeLoggerName: true,
-                    excludeLoggers: 'webdriver',
                 }
             }
             //----------------------- Zebrunner Reporter configuration -----------------------
