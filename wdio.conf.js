@@ -49,7 +49,7 @@ exports.config = {
                     accessToken: 'accessToken'
                 },
                 launch: {
-                    displayName: 'Nightly Regression',
+                    displayName: 'Zebrunner Demo Launch',
                     build: '2.41.2.2431-SNAPSHOT',
                     environment: 'QA',
                 }
