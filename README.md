@@ -27,7 +27,7 @@ In Zebrunner:
 - Click on "API Tokens" tab;
 - Press "Token" button, create a token and copy it before closing the dialog (you won't be able to see the token later).
 
-Define launch configuration (override defaults if needed) and copy content on the right to the list of reporters to the wdio.conf.js file.
+Define launch configuration (override defaults if needed) and copy content below to the list of reporters to the wdio.conf.js file.
 
 #### **`wdio.conf.js`**
 
@@ -57,7 +57,7 @@ In Zebrunner:
   You will see 'Hub Access' popup where you can copy username and access key for remote Zebrunne Selenium Grid;
 - Set copied values for variables `user` and `key`.
 
-Configure desired capabilities and insert snippet on the right to wdio.conf.js file.
+Configure desired capabilities and insert snippet below to wdio.conf.js file.
 
 #### **`wdio.conf.js`**
 
