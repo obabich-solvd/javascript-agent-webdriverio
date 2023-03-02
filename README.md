@@ -54,7 +54,7 @@ In Zebrunner:
 
 - Navigate to "Automation -> Launches" page by selecting the menu from left sidebar;
 - Click on key icon from the top right side on Launches page;
-  You will see 'Hub Access' popup where you can copy username and access key for remote Zebrunne Selenium Grid;
+  You will see 'Hub Access' popup where you can copy username and access key for remote Zebrunner Selenium Grid;
 - Set copied values for variables `user` and `key`.
 
 Configure desired capabilities and insert snippet below to wdio.conf.js file.
