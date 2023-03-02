@@ -35,7 +35,7 @@ Define launch configuration (override defaults if needed) and copy content below
 ZebrunnerReporter,
       {
         enabled: true,
-        projectKey: '<project_key>',
+        projectKey: 'DEF',
         server: {
           hostname: 'https://<workspace>.zebrunner.com/',
           accessToken: '<accessToken>',
