@@ -67,7 +67,7 @@ protocol: 'https',
   port: 443,
   path: '/wd/hub',
   user: '<username>',
-  key: '<access key>',
+  key: '<access_key>',
 
   capabilities: [
     {
@@ -92,4 +92,4 @@ npm install && npm run test
 Congratulations! You have just completed a reporting setup for a test project!
 Now you can go to the Launches page to see the results.
 
-To learn more about advanced reporting capabilities, supported Selenium Grid providers, test cases mapping and more please go to the [documentation](https://zebrunner.com/documentation/reporting/carina-testng/).
+To learn more about advanced reporting capabilities, supported Selenium Grid providers, test cases mapping and more please go to the [documentation](https://zebrunner.com/documentation/reporting/webdriverio/).
