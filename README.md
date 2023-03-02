@@ -6,7 +6,7 @@ Your guide to run the first WebdriverIO test with reporting to Zebrunner.
 
 ## Preconditions
 
-Before you can start configuring Zebrunner WebdriverIO reporting agent, you need to create a free Zebrunner workspace on https://zebrunner.com/
+Before you can start configuring Zebrunner WebdriverIO reporting agent, you need to create a free Zebrunner workspace at https://zebrunner.com/
 
 ## Configuration
 
