@@ -13,7 +13,8 @@
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
         "test": "wdio wdio.conf.js --spec ./test/specs/basic.js",
-        "test-advanced": "wdio wdio.conf.js --spec ./test/specs/advanced.js"
+        "test-advanced": "wdio wdio.conf.js --spec ./test/specs/advanced.js",
+        "test-tcm-integration": "wdio wdio.conf.js --spec ./test/specs/tcm.js"
     },
     "dependencies": {
         "@zebrunner/javascript-agent-webdriverio": "^1.1.1",

@@ -49,7 +49,7 @@ exports.config = {
           accessToken: 'accessToken',
         },
         launch: {
-          displayName: 'Zebrunner Demo Launch',
+          displayName: 'Zebrunner Demo Launch(WDIO)',
           build: '2.41.2.2431-SNAPSHOT',
           environment: 'QA',
         },
