@@ -25,7 +25,7 @@ describe('Advanced reporting test', () => {
     await browser.url(
       'https://zebrunner.com/documentation/reporting/webdriverio/#tracking-test-maintainer'
     );
-    currentTest.setMaintainer('Deve Loper');
+    currentTest.setMaintainer('hpotter');
     logger.info('Example shows how to attach a maintainer for a specific test');
     logger.info(
       'NOTE: The maintainer username should be a valid Zebrunner username, otherwise it will be set to anonymous'
